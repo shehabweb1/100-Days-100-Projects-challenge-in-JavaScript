@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #d1d1d1;
+  text-align: center;
+}
+h1 {
+  color: #1111dd;
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+section {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dd0000;
+}
+
+form textarea {
+  outline: none;
+  border: none;
+  color: purple;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+div {
+  width: 50%;
+  height: 287px;
+  background: #fff;
+  margin-top: 2.2rem;
+  color: blue;
+  text-align: start;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}

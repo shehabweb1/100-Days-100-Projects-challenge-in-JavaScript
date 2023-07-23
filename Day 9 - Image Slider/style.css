@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff700;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+.img-container {
+	width: 60%;
+	height: 60vh;
+	background: url("img/1.jpg") center/cover no-repeat;
+	margin: 10rem auto;
+	border: 0.5rem solid #fff700;
+	border-radius: 0.5rem;
+	position: relative;
+	box-shadow: 10px 10px 30px #111;
+}
+
+.btn {
+	position: absolute;
+	padding: 0.7rem 1rem;
+	border: 5px solid #36b6c7;
+	background: #22058c;
+}
+
+.btn i {
+	font-size: 2rem;
+	color: #fff;
+}
+
+.btn-left {
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-right {
+	right: 0;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+
+

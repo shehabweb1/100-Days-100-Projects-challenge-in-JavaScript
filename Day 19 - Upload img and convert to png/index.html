@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Upload image and Webpage convert to png</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section id='download'>
+  <div id="imgBox"></div>
+</section>
+
+<section class="firstImg">
+  <input type="file" accept="image/*" name="image" id="imgFile" style="display: none;" onchange="loadFile(event)" />
+  <label for="imgFile" class="uploadBtn">Upload Image</label>
+</section>
+
+<button id="dl">Download</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+        integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col tab-content">
+                <div class="card active" id="flight">
+                    <h3>SEARCH FOR FLIGHTS</h3>
+                    <form action="">
+                        <div class="trip">
+                            <div>
+                                <label for="radio-1">One Way</label>
+                                <input type="radio" name="radio-1" id="radio-1">
+                            </div>
+                            <div>
+                                <label for="radio-2">Round Trip</label>
+                                <input type="radio" name="radio-1" id="radio-2">
+                            </div>
+                        </div>
+                        <div class="check">
+                            <div class="check-in">
+                                <label class="form-lebel" for="">Form</label>
+                                <input class="input-form" type="text" placeholder="write here">
+                            </div>
+                            <div class="check-out">
+                                <label class="form-lebel" for="">TO</label>
+                                <input class="input-form" type="text" placeholder="write here">
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="travelers">
+                                <label class="form-lebel" for="">Travelers</label>
+                                <select class="input-form" name="travelers" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                            <div class="rooms">
+                                <label class="form-lebel" for="">Time</label>
+                                <select class="input-form" name="rooms" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">8PM</option>
+                                    <option value="2">10PM</option>
+                                    <option value="3">12AM</option>
+                                    <option value="4">6AM</option>
+                                    <option value="5">10AM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+                <div class="card" id="hotel">
+                    <h3>SEARCH FOR HOTELS</h3>
+                    <form action="">
+                        <div class="name">
+                            <label class="form-lebel" for="">Name:</label>
+                            <input type="text" class="input-form" placeholder="Enter Your Name">
+                        </div>
+                        <fieldset>
+                            <legend>Hotel Ratings: </legend>
+                            <label for="checkbox-1">2 Star</label>
+                            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                            <label for="checkbox-2">3 Star</label>
+                            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                            <label for="checkbox-3">4 Star</label>
+                            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                            <label for="checkbox-4">5 Star</label>
+                            <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                        </fieldset>
+                        <div class="check">
+                            <div class="check-in">
+                                <label class="form-lebel" for="">Check-in</label>
+                                <input class="input-form" type="text" id="check-in" placeholder="Click here">
+                            </div>
+                            <div class="check-out">
+                                <label class="form-lebel" for="">Check-out</label>
+                                <input class="input-form" type="text" id="check-out" placeholder="Click here">
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="travelers">
+                                <label class="form-lebel" for="">Travelers</label>
+                                <select class="input-form" name="travelers" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                            <div class="rooms">
+                                <label class="form-lebel" for="">Rooms</label>
+                                <select class="input-form" name="rooms" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+                <div class="card" id="cab">
+                    <h3>SEARCH FOR CABS</h3>
+                    <form action="">
+                        <div class="name">
+                            <label class="form-lebel" for="">Name:</label>
+                            <input type="text" class="input-form" placeholder="Enter Your Name">
+                        </div>
+                        <div class="check">
+                            <div class="check-in">
+                                <label class="form-lebel" for="">Form</label>
+                                <input class="input-form" type="text" placeholder="Click here">
+                            </div>
+                            <div class="check-out">
+                                <label class="form-lebel" for="">TO</label>
+                                <input class="input-form" type="text" placeholder="Click here">
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="travelers">
+                                <label class="form-lebel" for="">Travelers</label>
+                                <select class="input-form" name="travelers" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                            <div class="rooms">
+                                <label class="form-lebel" for="">Time</label>
+                                <select class="input-form" name="rooms" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+                <div class="card" id="bus">
+                    <h3>SEARCH FOR Buses</h3>
+                    <form action="">
+                        <div class="name">
+                            <label class="form-lebel" for="">Name:</label>
+                            <input type="text" class="input-form" placeholder="Enter Your Name">
+                        </div>
+                        <div class="check">
+                            <div class="check-in">
+                                <label class="form-lebel" for="">Form</label>
+                                <input class="input-form" type="text" placeholder="Click here">
+                            </div>
+                            <div class="check-out">
+                                <label class="form-lebel" for="">TO</label>
+                                <input class="input-form" type="text" placeholder="Click here">
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="travelers">
+                                <label class="form-lebel" for="">Travelers</label>
+                                <select class="input-form" name="travelers" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                            <div class="rooms">
+                                <label class="form-lebel" for="">Time</label>
+                                <select class="input-form" name="rooms" id="">
+                                    <option value="0">Select Now</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col text">
+                <h1>Your One Stop Shop For Hajj & Umrah Rituals</h1>
+                <p>Discover amzaing places at exclusive deals</p>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <button class="flightBtn">Flights</button>
+        <button class="hotelBtn">Hotels</button>
+        <button>Umrah</button>
+        <button>Hajj</button>
+        <button class="cabBtn">Cabs</button>
+        <button class="busBtn">Buses</button>
+        <button>Explore</button>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

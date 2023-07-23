@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #182a40;
+}
+
+.container {
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.container h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.container h5 {
+	padding-top: 1rem;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.card {
+	position: relative;
+	margin-top: 2rem;
+	padding: 1.5rem;
+	background-color: #f1f1f1;
+	height: auto;
+	width: 60vw;
+	text-align: left;
+}
+
+.card img {
+	height: 100px;
+	width: 100px;
+}
+
+.card h3 {
+	font-size: 1.5rem;
+	color: #222;
+	margin: 0.7rem 0;
+}
+
+.card i {
+	color: #d17514;
+}
+
+.card p {
+	padding-top: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.prevBtn {
+	right: 5rem;
+}
+
+.prevBtn,
+.nextBtn {
+	position: absolute;
+	top: 1rem;
+	transition: 0.5s ease;
+}
+.nextBtn {
+	right: 1.5rem;
+}
+
+.prevBtn i,
+.nextBtn i {
+	font-size: 2rem;
+	font-weight: bolder;
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.prevBtn:hover i,
+.nextBtn:hover i {
+	color: #fff;
+	background-color: #d17514;
+}
+
+.prevBtn:active i,
+.nextBtn:active i {
+	background-color: #cb873f;
+}
+
+@media (max-width: 600px) {
+	.card {
+		width: 90%;
+	}
+}
